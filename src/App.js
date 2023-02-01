@@ -6,7 +6,7 @@ import TodoList from "./components/TodoList";
 function App() {
   const [inputText, setInputText] = useState("");
   const [todos, setTodos] = useState([]);
-  const [status, setStatus] = useState(["all"]);
+  const [status, setStatus] = useState("all");
   const [filteredTodos, setFilteredTodos] = useState([]);
 
   useEffect(() => {
@@ -16,7 +16,7 @@ function App() {
           setFilteredTodos(todos.filter((todo) => todo.completed === true));
           break;
         case "uncompleted":
-          setFilteredTodos(todos.filter((todo) => todo.completed === true));
+          setFilteredTodos(todos.filter((todo) => todo.completed === false));
           break;
         default:
           setFilteredTodos(todos);
