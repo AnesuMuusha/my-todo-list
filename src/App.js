@@ -32,7 +32,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>The 5am Club #to do list</h1>
+        <h1>To do list</h1>
       </header>
       <Form
         setInputText={setInputText}
